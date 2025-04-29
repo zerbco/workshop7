@@ -30,7 +30,7 @@ House::~House() {
     }
 }
 
-bool House::addAppliances(Appliance* appliance) {
+bool House::addAppliance(Appliance* appliance) {
     if (currentCount >= maxAppliances) {
         return false;
     }
