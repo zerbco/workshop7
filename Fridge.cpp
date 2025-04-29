@@ -17,7 +17,7 @@ void Fridge::setVolume(double volume) {
 }
 
 double Fridge::getPowerConsumption() {
-    if (!getIsOn()) {
+    if (!get_isOn()) {
         return 0.0;
     }
 

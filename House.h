@@ -16,7 +16,8 @@ class House{
 
     ~House();
 
-    bool addAppliances(Appliance * appliance);
+    bool addAppliance(Appliance* appliance);
+    bool addAppliances(Appliance* appliance) { return addAppliance(appliance); }
     double getTotalPowerConsumption();
 };
 

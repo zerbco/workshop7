@@ -5,19 +5,18 @@ TV::TV() : Appliance() {
 }
 
 TV::TV(int powerRating, double screenSize) : Appliance(powerRating) {
-    this -> screenSize = screenSize;
+    this->screenSize = screenSize;
 }
-
 
 void TV::setscreenSize(double screenSize) {
-    this -> screenSize = screenSize;
+    this->screenSize = screenSize;
 }
 
-double TV::getscreenSize() const{
+double TV::getscreenSize() const {
     return screenSize;
 }
 
-double TV::getPowerConsumption(){
+double TV::getPowerConsumption() {
     if(!getIsOn()) {
         return 0.0;
     }

@@ -13,6 +13,11 @@ class TV : public Appliance {
 
     void setscreenSize(double screenSize);
     double getscreenSize() const;
+    
+    void setScreenSize(double screenSize) { setscreenSize(screenSize); }
+    double getScreenSize() const { return getscreenSize(); }
+    
+    bool get_isOn() const { return getIsOn(); }
 
     double getPowerConsumption() override;
 };
