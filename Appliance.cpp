@@ -6,8 +6,8 @@ Appliance::Appliance() {
 }
 
 Appliance::Appliance(int powerRating) {
-    this -> powerRating = powerRating;
-    this -> isOn = false;
+    this->powerRating = powerRating;
+    this->isOn = false;
 }
 
 int Appliance::getPowerRating() const{
@@ -15,11 +15,7 @@ int Appliance::getPowerRating() const{
 }
 
 void Appliance::setPowerRating(int powerRating){
-    this -> powerRating = powerRating;
-}
-
-bool Appliance::get_isOn() const{
-    return isOn;
+    this->powerRating = powerRating;
 }
 
 void Appliance::turnOn(){
@@ -29,6 +25,7 @@ void Appliance::turnOn(){
 void Appliance::turnOff() {
     isOn = false;
 }
+
 double Appliance::getPowerConsumption() {
     return 0;
 }

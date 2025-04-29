@@ -17,7 +17,7 @@ int main() {
 
     cout << "\nFridge with power rating of 200 watts and volume of 400 litres: " << endl;
     cout << "Power Rating " << fridge2.getPowerRating() << " watts" << endl;
-    cout << "Volume: " << fridge2.getVolume() << " litres" << endl;`
+    cout << "Volume: " << fridge2.getVolume() << " litres" << endl;
     cout << "is On: " << (fridge2.get_isOn() ? "Yes" : "No") << endl;
     cout << "Power Consumption: " << fridge2.getPowerConsumption() << endl;
 

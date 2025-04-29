@@ -1,3 +1,4 @@
+
 #include "Fridge.h"
 
 Fridge::Fridge() : Appliance() {
@@ -5,7 +6,7 @@ Fridge::Fridge() : Appliance() {
 }
 
 Fridge::Fridge(int powerRating, double volume) : Appliance(powerRating) {
-    this -> volume = volume;
+    this->volume = volume;
 }
 
 double Fridge::getVolume() const {
@@ -13,11 +14,11 @@ double Fridge::getVolume() const {
 }
 
 void Fridge::setVolume(double volume) {
-    this -> volume = volume;
+    this->volume = volume;
 }
 
 double Fridge::getPowerConsumption() {
-    if (!get_isOn()) {
+    if (!getIsOn()) {
         return 0.0;
     }
 
