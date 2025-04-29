@@ -1,4 +1,3 @@
-
 #include "Fridge.h"
 
 Fridge::Fridge() : Appliance() {
@@ -21,6 +20,6 @@ double Fridge::getPowerConsumption() {
     if (!getIsOn()) {
         return 0.0;
     }
-
+    
     return getPowerRating() * 24 * (volume / 100);
 }

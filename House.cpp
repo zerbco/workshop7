@@ -6,7 +6,7 @@ House::House() {
     appliances = nullptr;
 }
 
-House:: House(int numAppliances) {
+House::House(int numAppliances) {
     maxAppliances = numAppliances;
     currentCount = 0;
 
@@ -45,7 +45,7 @@ double House::getTotalPowerConsumption() {
 
     for (int i = 0; i < currentCount; i++) {
         if (appliances[i] != nullptr) {
-            totalConsumption += appliances[i]-> getPowerConsumption();
+            totalConsumption += appliances[i]->getPowerConsumption();
         }
     }
     return totalConsumption;
